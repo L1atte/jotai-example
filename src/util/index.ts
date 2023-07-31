@@ -1,8 +1,7 @@
-function sleep(fn: () => void, delay = 2000) {
+function sleep(value: number, delay = 3000) {
   return new Promise(resolve => {
     setTimeout(() => {
-      const res = fn();
-      resolve(res);
+      resolve(value);
     }, delay);
   });
 }
